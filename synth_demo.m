@@ -56,6 +56,8 @@ id11=find(x>0);
 on_low=find(mod((id11-1),m)==0);
 in_bet=setdiff(id11,id11(on_low));
 
+
+[status, msg, msgID] = mkdir('Waveform Plots');
 %Plot Paramaters
 plot_d=0;
 plot_up=N;

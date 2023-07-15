@@ -83,6 +83,7 @@ for flen=1:length(l_vec)
         avg_err_ham_m_fir(m)=mean(err_fir);
     
     end
+    [status, msg, msgID] = mkdir('Simulation Data');
     save(strcat('Simulation Data/FIR_vs_IIR_p',num2str(100*p),'_alpha_',num2str(100*alpha),'_flen_',num2str(L)))
 end
 

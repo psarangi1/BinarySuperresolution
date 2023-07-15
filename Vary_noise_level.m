@@ -220,7 +220,7 @@ for alpha_i=1:length(alpha_vec)
         
         fprintf("Completed %d\n",n_i)
     end
-    
+    [status, msg, msgID] = mkdir('Simulation Data');
     %Save data
     save(strcat('Simulation Data/Spike_and_Count_Recovery_L1_comparison_mc_noise_vary_','m_',num2str(m),'_alpha_',num2str(100*alpha),'_prob_',num2str(100*p),'_amp_',num2str(amp)))
     
